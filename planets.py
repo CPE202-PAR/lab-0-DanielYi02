@@ -7,6 +7,9 @@ def weight_on_planets(pounds: float, planet: str) -> float:
       return pounds * 2.34
    elif planet == "Venus":
       return pounds * 0.91
+   else:
+      raise ValueError
+
 
 if __name__ == '__main__':    # pragma: no cover
    pounds = float(input("What do you weigh on earth? "))
